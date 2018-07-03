@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  rstudio:
+    build: .
+    container_name: payslip
+    volumes:
+      - ./:/home/rstudio
+    ports:
+      - 6237:8787
